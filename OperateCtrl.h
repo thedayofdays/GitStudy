@@ -14,6 +14,13 @@ typedef enum{
 	IN_PORT_3,
 	IN_PORT_MAX,
 }INPORTLIST;
+typedef enum{
+	OPERATE_OFF_OK=0,
+	OPERATE_ON_OK,
+	OPERATE_BLOCK,/*粘连*/
+	OPERATE_NO_ACTION,/*拒动*/
+	OPERATE_MIS_ACTION,/*误动*/
+}OPERATE_RESULT;
 extern void OperateCtrl(UINT8 type,BOOL operate,UINT16 delayTime);
 extern BOOL OperateState(UINT8 type,UINT8* result);
 extern void OperateRetry(void);
