@@ -1,2 +1,0 @@
-# GitStudy
-Just test
